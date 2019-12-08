@@ -15,8 +15,9 @@ app.post('*', postRequestHandler);
 
 const httpServer = http.createServer(app);
 
-httpServer.listen(8889, () => {
-    console.log('HTTP Server running on port 8889');
+let port = 8889;
+httpServer.listen(port, () => {
+    console.log(`HTTP Server running on port ${port}`);
 });
 
 function _makeProgramToExecute(options) {
@@ -28,7 +29,7 @@ function _makeProgramToExecute(options) {
     switch (options.command) {
         case 'SAY_TEXT':
             scriptName = path.join(__dirname + '/../py-scripts/say-text.py');
-            pyprog = spawn('python', [scriptName, `--message "${options.params}"`]);
+            pyprog = spawn('python', [scriptName, `"${options.params}"`]);
 
             break;
         case 'CHECK_BATTERY':
