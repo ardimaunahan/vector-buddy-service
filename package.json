@@ -5,19 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "moment": "^2.24.0",
     "morgan": "^1.9.1",
-    "request": "^2.88.0",
-    "rss-parser": "^3.7.3"
   },
   "devDependencies": {
     "eslint-plugin-requirejs": "^4.0.0"
