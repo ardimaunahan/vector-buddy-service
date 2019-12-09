@@ -13,3 +13,6 @@ This Node.js application is an essential component to the
 5. Install **Vector Buddy** from your Samsung phone's Marketplace.
 
 That's it! Have fun and more features will be added in future releases!
+
+# Demo
+Watch this raw [video](https://youtu.be/fZ2zcswsYd0) .
